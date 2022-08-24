@@ -5,6 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Task List</title>
   </head>
   <body>
@@ -16,16 +23,23 @@
       </form>
     </header>
     <main>
-      <section>
+      <section class="task-list">
         <h3>Tasks</h3>
-        <div class="tasks">
-          <div id="task">
+        <div id="tasks">
+          <div class="task">
             <div class="content">
-              <input type="text" class="text" value="My task" readonly />
+              <input
+                type="text"
+                id="task"
+                class="text"
+                value="My new task"
+                readonly
+              />
             </div>
-            <div class="action">
-              <button class="edit">Edit</button>
-              <button class="delete">Delete</button>
+            <div class="actions">
+              <i class="fa-solid fa-check edit"></i>
+
+              <i class="fa-solid fa-x delete"></i>
             </div>
           </div>
         </div>
