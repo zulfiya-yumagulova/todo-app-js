@@ -20,6 +20,8 @@ window.addEventListener("load", () => {
       alert("Please fill out the task");
       return;
     }
+
+    // Creating a div to display tasks
     const taskElement = document.createElement("div");
     taskElement.classList.add("task");
 
@@ -36,5 +38,17 @@ window.addEventListener("load", () => {
     taskContentEl.appendChild(inputNewTask);
 
     tasksList.appendChild(taskElement);
+
+    // Creating buttons Edit/Delete
+    const actionsDiv = document.createElement("div");
+    actionsDiv.classList.add("actions");
+
+    const editButton = document.createElement("button");
+    editButton.classList.add("delete");
+
+    const deleteButton = document.createElement("i");
+    deleteButton.classList.add("edit");
+
+    actionsDiv.appendChild(editButton);
   });
 });
