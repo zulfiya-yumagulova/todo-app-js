@@ -7,6 +7,8 @@ const taskList = document.querySelector(".task-list");
 // Event Listeners
 
 addButton.addEventListener("click", addTask);
+taskList.addEventListener("click", deleteTask);
+taskList.addEventListener("click", completedTask);
 
 // Functions
 function addTask(event) {
@@ -41,4 +43,26 @@ function addTask(event) {
 
   //   Clear task input value
   taskInput.value = "";
+}
+
+// Dlete task function
+
+function deleteTask(event) {
+  const item = event.target;
+  if (item.classList[0] === "delete-btn") {
+    const task = item.parentElement;
+    task.remove();
+  }
+  // Delete
+}
+
+// Completed Task function
+
+function completedTask(event) {
+  const item = event.target;
+  console.log("clicked");
+  if (item.classList[0] === "comleted-btn") {
+    const task = item.parentElement;
+    task.classList.toggle("completed");
+  }
 }

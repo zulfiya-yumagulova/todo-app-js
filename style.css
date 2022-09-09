@@ -95,6 +95,10 @@ main {
   align-items: center;
 }
 
+.task {
+  display: flex;
+}
+
 .task-list {
   list-style: none;
   min-width: 30%;
@@ -126,7 +130,17 @@ main {
   margin: 1rem;
   cursor: pointer;
   border: none;
-  display: inline-block;
+}
+
+.fa-trash,
+.fa-check {
+  pointer-events: none;
+}
+
+.completed {
+  /* text-decoration: line-through; */
+  /* opacity: 0.5; */
+  color: red;
 }
 
 /* Tablets */
