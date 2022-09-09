@@ -19,29 +19,16 @@
       <h1>Task List</h1>
       <form id="new-task">
         <input type="text" class="input-task" placeholder="Add Task" />
-        <button class="btn-add" id="button-add">Add</button>
+        <button class="btn-add" id="button-add" type="submit">Add</button>
       </form>
     </header>
     <main>
-      <section class="task-list">
+      <section>
         <h3>Tasks</h3>
-        <div id="tasks">
-          <!-- <div class="task">
-            <div class="content">
-              <input
-                type="text"
-                id="task"
-                class="text"
-                value="My new task"
-                readonly
-              />
-            </div>
-            <div class="actions">
-              <button class="edit">Edit</button>
-              <button class="delete">Delete</button>
-        
-            </div>
-          </div> -->
+        <div id="tasks-container">
+          <ul class="task-list">
+            <!-- <div class="task"></div> -->
+          </ul>
         </div>
       </section>
     </main>
